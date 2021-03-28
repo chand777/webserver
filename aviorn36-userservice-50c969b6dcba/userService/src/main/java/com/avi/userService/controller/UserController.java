@@ -33,4 +33,10 @@ public class UserController {
 		log.info("userController :: getUser");
 		return userService.getUser(userId);
 	}
+	
+	@GetMapping("/testPath")
+	public String testService(@PathVariable String testPath) {
+		log.info("userController :: getUser");
+		return "Service Running...";
+	}
 }
